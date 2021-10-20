@@ -15,5 +15,4 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="Images/Favicon.png" href="Images/Favicon.png" />
 
-
 </head>
