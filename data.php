@@ -140,3 +140,15 @@ $randomFact = [
     'Americans ate over 4.5 billion tacos last year!',
     'The first taco party in history was held in 1520'
 ];
+
+function enjoy($theTaco)
+{
+    return "Enjoy this memorable $theTaco";
+}
+
+$tacosToEnjoy = [
+    'SPICY ASIAN',
+    'PINEAPPLE-AVOCADO',
+    'TACO-PARMESAN',
+    'FISH-TACO',
+];

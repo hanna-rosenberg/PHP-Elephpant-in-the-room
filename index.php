@@ -11,13 +11,18 @@
         </ul>
     </nav>
     <h1>Taco!</h1>
-    <h1>Taco!</h1>
+    <h1 class="headerTaco">Taco!</h1>
 
 
     <h2>Tacos of the week :</h2>
 
     <div class="parent">
         <div class="child">
+
+
+            <?php
+            $numItems = count($tacos);
+            $i = 0; ?>
 
             <?php foreach ($tacos as $taco) :
                 $img = $taco['image'];
@@ -38,7 +43,6 @@
                     </p>
                 <?php } ?>
                 </ul>
-
                 <p class="recipes-rating">Rating: <?php
                                                     echo $grade; ?>
 
@@ -54,10 +58,20 @@
                     }
                     ?>
                 </p>
+
                 <p class="border">
                 </p>
+                <?php if (++$i === $numItems) : ?>
+                    <div class="randomFact">
+                        <button class="button"></button>
+                        <p>Press the taco 4 a random taco-fact!</p>
+                    </div>
+                <?php endif; ?>
+
+
             <?php
             endforeach ?>
+
 
 
         </div>
@@ -65,10 +79,6 @@
 
     <?php require __DIR__ . '/footer.php'; ?>
 
-    <!-- <div class="randomFact">
-        <button class="button"></button>
-        <p>Press the taco 4 a random taco-fact!</p>
-    </div>
 
 
     <?php echo $randomFact[shuffle($randomFact)];            ?> -->
