@@ -13,12 +13,6 @@
     <h1>Taco!</h1>
     <h1>Taco!</h1>
 
-    <!-- <div class="randomFact">
-        <button class="button"></button>
-        <p>Press the taco 4 a random taco-fact!</p>
-    </div> 
-
-LÄGG DENNA RÄTT. Hamnar på samma rad som h2.-->
 
     <h2>Tacos of the week :</h2>
 
@@ -32,48 +26,51 @@ LÄGG DENNA RÄTT. Hamnar på samma rad som h2.-->
             ?>
 
                 <p><img src="<?php echo "$img"; ?>"></p>
-                <p class="recipes-title"><?php
-                                            echo $name; ?>
-                    <?php
-                    foreach ($taco['ingredients'] as $ingredient) {
-                    ?>
+                <p class="recipes-title"><?php echo $name; ?></p>
                 <ul>
-                    <li><?php
-                        echo $ingredient; ?>
-                    </li>
-                </ul>
-            <?php } ?>
+                    <?php foreach ($taco['ingredients'] as $ingredient) { ?>
+                        <li><?php echo $ingredient; ?></li>
+                    <?php } ?>
 
-            <p><?php
-                foreach ($taco['directions'] as $direction) {
-                ?> <li><?php
-                        echo $direction; ?>
-                    </li>
+                    <p>
+                        <?php foreach ($taco['directions'] as $direction) { ?>
+                            <li><?php echo $direction; ?> </li>
+                    </p>
                 <?php } ?>
+                </ul>
 
+                <p class="recipes-rating">Rating: <?php
+                                                    echo $grade; ?>
 
-            <p class="recipes-rating">Rating: <?php
-                                                echo $grade; ?>
-
-                <?php
-                if ($grade >= 9) {
-                    echo "- This taco is a FAVORITE!";
-                } elseif ($grade > 7 && $grade < 9) {
-                    echo "- This is a good one!";
-                } elseif ($grade < 7 && $grade > 4) {
-                    echo "- This taco is allright!";
-                } else {
-                    echo "- This taco is BAD!!";
-                }
-                ?>
-            </p>
-            <p class="border">
-            </p>
-        <?php
+                    <?php
+                    if ($grade >= 9) {
+                        echo "- This taco is a FAVORITE!";
+                    } elseif ($grade > 7 && $grade < 9) {
+                        echo "- This is a good one!";
+                    } elseif ($grade < 7 && $grade > 4) {
+                        echo "- This taco is allright!";
+                    } else {
+                        echo "- This taco is BAD!!";
+                    }
+                    ?>
+                </p>
+                <p class="border">
+                </p>
+            <?php
             endforeach ?>
 
-        <?php echo $randomFact[2];            ?>
+
         </div>
     </div>
 
     <?php require __DIR__ . '/footer.php'; ?>
+
+    <!-- <div class="randomFact">
+        <button class="button"></button>
+        <p>Press the taco 4 a random taco-fact!</p>
+    </div>
+
+
+    <?php echo $randomFact[shuffle($randomFact)];            ?> -->
+    <!-- // shufflar ett fakta varje gång sidan laddas. Men jag vill att
+// den skall shuffla när man trycker på knappen. -->

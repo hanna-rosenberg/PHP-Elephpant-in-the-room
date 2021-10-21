@@ -1,6 +1,6 @@
 </body>
 <footer>
-    <small>&copy; <?php echo date('Y'); ?></small>
+    <div class="footer">The-TACO-company <?php echo date('Y'); ?></div>
 </footer>
 
 </html>
