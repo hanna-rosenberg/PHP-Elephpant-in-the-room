@@ -152,3 +152,16 @@ $tacosToEnjoy = [
     'TACO-PARMESAN',
     'FISH-TACO',
 ];
+
+function title($tacoInTitle)
+{
+    return 'Taco!';
+}
+
+
+function amount(string $quantity, int $year, int $distance): string
+{
+    return "FUN FACT! Americans ate $quantity tacos $year. That is $distance miles of tacos.";
+}
+
+$amountOfTacos = amount('4.5 billion', 2020, 490000);
