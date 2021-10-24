@@ -9,49 +9,56 @@
             <li>Contact</li>
         </ul>
     </nav>
+
+
     <h1>Taco!</h1>
-
-    <h1 class="headerTaco">Taco!
-    </h1>
-
+    <h1 class="headerTaco">Taco!</h1>
 
     <p class="headerFact">
-
-        <?php echo $amountOfTacos;
-        ?>
+        <?php echo $amountOfTacos; ?>
     </p>
 
-
-    <h2>Tacos of the week :</h2>
+    <h2>
+        <?php echo whatday(); ?>
+    </h2>
+    <h2>Get inspired:</h2>
 
     <div class="parent">
         <div class="child">
 
             <?php
             $numItems = count($tacos);
-            $i = 0; ?>
+            $i = 0;
 
-            <?php foreach ($tacos as $taco) :
+            foreach ($tacos as $taco) :
                 $img = $taco['image'];
                 $name = $taco['title'];
                 $grade = $taco['rating'];
             ?>
 
                 <p><img src="<?php echo "$img"; ?>"></p>
-                <p class="recipes-title"><?php echo $name; ?></p>
+                <p class="recipes-title">
+                    <?php echo $name; ?>
+                </p>
                 <ul>
                     <?php foreach ($taco['ingredients'] as $ingredient) { ?>
-                        <li><?php echo $ingredient; ?></li>
+                        <li>
+                            <?php echo $ingredient; ?>
+                        </li>
                     <?php } ?>
 
                     <p>
                         <?php foreach ($taco['directions'] as $direction) { ?>
-                            <li><?php echo $direction; ?> </li>
+                            <li>
+                                <?php echo $direction; ?>
+                            </li>
                     </p>
                 <?php } ?>
                 </ul>
-                <p class="recipes-rating">Rating: <?php
-                                                    echo $grade; ?>
+
+                <p class="recipes-rating">Rating:
+                    <?php
+                    echo $grade; ?>
 
                     <?php
                     if ($grade >= 9) {

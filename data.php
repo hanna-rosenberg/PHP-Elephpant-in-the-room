@@ -146,24 +146,35 @@ function enjoy($theTaco)
     return "Enjoy this memorable $theTaco";
 }
 
-$tacosToEnjoy = [
-    'SPICY ASIAN',
-    'PINEAPPLE-AVOCADO',
-    'TACO-PARMESAN',
-    'FISH-TACO',
-];
 
-function title($tacoInTitle)
-{
-    return 'Taco!';
-}
 
 
 function amount(string $quantity, int $year, int $distance): string
 {
     return "
     We give you four new taco-recipes every week. We love tacos almost as much as the Americans.
-    Americans ate $quantity tacos $year. That is $distance miles of tacos.";
+    Americans ate $quantity tacos $year. That is $distance miles of tacos!!";
 }
 
 $amountOfTacos = amount('4.5 billion', 2020, 490000);
+
+
+function whatDay()
+{
+
+    if (date('w') == 0) {
+        return "It's taco-sunday!";
+    } else if (date('w') == 1) {
+        return "It's taco-monday!";
+    } else if (date('w') == 2) {
+        return "It's taco-tuesday!";
+    } else if (date('w') == 3) {
+        return "It's taco-wednesday!";
+    } else if (date('w') == 4) {
+        return "It's taco-thursday!";
+    } else if (date('w') == 5) {
+        return "It's TACO-FRIDAY!";
+    } else if (date('w') == 6) {
+        return "It's taco-saturday!";
+    }
+}

@@ -23,6 +23,7 @@ h2 {
   color: white;
   font-family: 'Advent Pro';
   font-size: 30px;
+  margin: 0px;
 }
 
 h3 {
@@ -88,6 +89,7 @@ nav ul {
   width: 300px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .border {
@@ -168,11 +170,12 @@ p .randomFact {
 .headerFact {
   font-family: 'Bungee';
   font-size: 15px;
-  color: white;
+  color: #fbd1e0;
   text-align: center;
-  background: #fbcadb;
+  background: #ffffff;
   border-radius: 40px;
-  margin: 30px;
+  margin: 20px;
+  border-style: dotted;
 }
 
 @media screen and (min-width: 430px) {
@@ -197,5 +200,12 @@ p .randomFact {
 
   .headerFact {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .headerFact {
+    margin-right: 150px;
+    margin-left: 150px;
   }
 }
