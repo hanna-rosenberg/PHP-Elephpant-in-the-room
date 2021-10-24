@@ -161,7 +161,9 @@ function title($tacoInTitle)
 
 function amount(string $quantity, int $year, int $distance): string
 {
-    return "FUN FACT! Americans ate $quantity tacos $year. That is $distance miles of tacos.";
+    return "
+    We give you four new taco-recipes every week. We love tacos almost as much as the Americans.
+    Americans ate $quantity tacos $year. That is $distance miles of tacos.";
 }
 
 $amountOfTacos = amount('4.5 billion', 2020, 490000);

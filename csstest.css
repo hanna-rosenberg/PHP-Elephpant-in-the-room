@@ -176,6 +176,11 @@ p .randomFact {
 }
 
 @media screen and (min-width: 430px) {
+  body {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+  }
   img {
     border-radius: 0px;
     width: 300px;

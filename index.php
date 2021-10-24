@@ -15,7 +15,7 @@
     </h1>
 
 
-    <p class="randomFact">
+    <p class="headerFact">
 
         <?php echo $amountOfTacos;
         ?>
