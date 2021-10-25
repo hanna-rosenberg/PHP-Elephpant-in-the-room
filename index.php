@@ -21,7 +21,7 @@
     <h2>
         <?php echo whatday(); ?>
     </h2>
-    <h2>Get inspired:</h2>
+    <h2>Get inspired :</h2>
 
     <div class="parent">
         <div class="child">
@@ -75,9 +75,11 @@
                 <p class="border">
                 </p>
                 <?php if (++$i === $numItems) : ?>
+
                     <div class="randomFact">
                         <button class="button"></button>
-                        <p>Press the taco 4 a random taco-fact!</p>
+                        <p>Press the taco for a random taco-fact!</p>
+
                     </div>
                 <?php endif; ?>
 
@@ -92,6 +94,7 @@
 
 
     <!-- <?php echo $randomFact[shuffle($randomFact)];            ?> -->
+
 
 
     <!-- // shufflar ett fakta varje gång sidan laddas. Men jag vill att

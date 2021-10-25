@@ -1,0 +1,31 @@
+@media screen and (min-width: 430px) {
+  img {
+    border-radius: 0px;
+    width: 300px;
+    height: 450px;
+    border-style: dotted;
+    border-color: #f3e9e3;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .child {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+    width: 400px;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .headerFact {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .headerFact {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}

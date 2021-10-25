@@ -134,17 +134,13 @@ $tacos = [
 
 $randomFact = [
     'There is a National Taco Day',
-    "The Word Taco Means 'Light Lunch'",
+    'The Word Taco Means Light Lunch',
     'Tacos Have Been Around for Millennia',
     'You Cant Get Tacos at Lunchtime in Mexico',
     'Americans ate over 4.5 billion tacos last year!',
     'The first taco party in history was held in 1520'
 ];
 
-function enjoy($theTaco)
-{
-    return "Enjoy this memorable $theTaco";
-}
 
 
 

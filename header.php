@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taco! Taco!</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="facts.css" />
+    <link rel="stylesheet" href="recepiets.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="navigation.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Bungee+Shade&display=swap" rel="stylesheet">

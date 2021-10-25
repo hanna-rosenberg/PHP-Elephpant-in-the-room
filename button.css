@@ -1,0 +1,14 @@
+.button {
+  background-image: url('Images/taco.png');
+  background-size: 70px 70px;
+  height: 70px;
+  width: 70px;
+  background-color: transparent;
+  border: none;
+  transition-duration: 2s;
+  transition-property: transform;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+}
