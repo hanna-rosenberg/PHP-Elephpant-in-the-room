@@ -1,33 +1,48 @@
-.recipes-title {
-  font-size: 30px;
-}
-
-.recipes-rating {
-  font-size: 16px;
-  background-color: #f3e9e3;
-  border: dotted;
-  border-color: white;
-}
-
+/* Styles on all images */
 img {
-  border-radius: 20px;
+  border-radius: 30px;
   width: 250px;
   height: 350px;
 }
 
+/* Styles on the main-content, the ingredients and directions */
 ul {
-  margin: 2px;
   display: block;
-  list-style-type: disc;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+/* Styles on p-tags */
 p {
-  list-style: none;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* Style on the recepiets titles */
+.recipes-title {
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* Styles on text "Ingredients" and "Directions" */
+.main-titles {
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+/* Styles on rating */
+.recipes-rating {
+  font-size: 16px;
+  background-color: #f3e9e3;
+  border: dotted;
+  border-color: white;
+  margin-top: 25px;
+  text-align: center;
 }

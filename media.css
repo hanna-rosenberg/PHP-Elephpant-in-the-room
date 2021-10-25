@@ -1,4 +1,5 @@
 @media screen and (min-width: 430px) {
+  /* Changes styles of the images when the screen gets bigger */
   img {
     border-radius: 0px;
     width: 300px;
@@ -8,6 +9,8 @@
     padding: 10px;
     border-radius: 30px;
   }
+
+  /* Changes styles on the white div with all the recepiets content */
   .child {
     display: flex;
     background-color: white;
@@ -18,11 +21,13 @@
     padding-top: 40px;
   }
 
+  /* Increases the size of the first fact at the top of the page */
   .headerFact {
     font-size: 20px;
   }
 }
 
+/* Adds margin on the first fact at the top of the page when the screen gets big */
 @media screen and (min-width: 800px) {
   .headerFact {
     margin-right: 150px;

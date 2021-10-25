@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+
+// Array containing title, ingredients, directions, images and rating. Main-content of the page. 
 $tacos = [
     [
         'title' => 'SPICY ASIAN',
@@ -116,7 +118,6 @@ $tacos = [
             'Cilantro for topping',
             'Cotija cheese for topping',
         ],
-
         'directions' => [
             'Puree all the jalapeño sauce ingredients in a food processor until your desired consistency is reached.',
             'I sometimes add a little more oil or water at the end to make the sauce less gloppy and more drizzle-able.',
@@ -132,6 +133,7 @@ $tacos = [
     ],
 ];
 
+// Array containing random facts that can be shown when pressing a button.
 $randomFact = [
     'There is a National Taco Day',
     'The Word Taco Means Light Lunch',
@@ -142,9 +144,7 @@ $randomFact = [
 ];
 
 
-
-
-
+// Function that easely can change every year when new numbers are given. 
 function amount(string $quantity, int $year, int $distance): string
 {
     return "
@@ -155,6 +155,7 @@ function amount(string $quantity, int $year, int $distance): string
 $amountOfTacos = amount('4.5 billion', 2020, 490000);
 
 
+// Function that shows a different string depending on what day it is. 
 function whatDay()
 {
 

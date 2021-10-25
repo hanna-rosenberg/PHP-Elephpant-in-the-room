@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
 }
-
+/* Styles on body */
 body {
   background-color: #f3e9e3;
   font-family: 'Advent Pro';
 }
 
+/* Styles on H1, first "Taco!" */
 h1 {
   color: #ed91b2;
   font-size: 70px;
@@ -17,6 +18,7 @@ h1 {
   margin: auto;
 }
 
+/* Styles on H2, "it's taco-monday.." */
 h2 {
   display: flex;
   justify-content: center;
@@ -26,6 +28,40 @@ h2 {
   margin: 0px;
 }
 
+/* Styles parent-div */
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles on child-div */
+.child {
+  background-color: white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  height: 100%;
+  width: 300px;
+}
+
+/* Styles on the second "Taco!" text that is placed more to the left */
+.headerTaco {
+  margin-left: 30px;
+}
+
+/* Styles on the border that separates the recepiets */
+.border {
+  border: 2px dashed #f3e9e3;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Styles on the footer */
 footer {
   display: flex;
   justify-content: center;
@@ -34,39 +70,4 @@ footer {
   height: 20px;
   margin: auto;
   padding: 30px;
-}
-
-.parent {
-  display: flex;
-  justify-content: center;
-}
-
-.child {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  height: 100%;
-  width: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-
-.child li {
-  list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.headerTaco {
-  margin-left: 30px;
-}
-
-.border {
-  border: 2px dashed #f3e9e3;
-  width: 100%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }

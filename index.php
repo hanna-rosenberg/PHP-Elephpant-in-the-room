@@ -41,24 +41,26 @@
                     <?php echo $name; ?>
                 </p>
                 <ul>
+                    <p class="main-titles">
+                        <?php echo "Ingredients: "; ?></p>
+
                     <?php foreach ($taco['ingredients'] as $ingredient) { ?>
                         <li>
                             <?php echo $ingredient; ?>
                         </li>
                     <?php } ?>
-
-                    <p>
-                        <?php foreach ($taco['directions'] as $direction) { ?>
-                            <li>
-                                <?php echo $direction; ?>
-                            </li>
-                    </p>
-                <?php } ?>
+                    <p class="main-titles">
+                        <?php echo "Directions: "; ?></p>
+                    <?php foreach ($taco['directions'] as $direction) { ?>
+                        <li>
+                            <?php echo $direction; ?>
+                        </li>
+                    <?php } ?>
                 </ul>
 
-                <p class="recipes-rating">Rating:
+                <p class="recipes-rating">
                     <?php
-                    echo $grade; ?>
+                    echo "Rating: $grade"; ?>
 
                     <?php
                     if ($grade >= 9) {
@@ -95,37 +97,8 @@
 
     <!-- <?php echo $randomFact[shuffle($randomFact)];            ?> -->
 
+    <!-- Shufflar ett fakta varje gång sidan laddas. Men jag vill att
+    den skall shuffla när man trycker på knappen. -->
 
-
-    <!-- // shufflar ett fakta varje gång sidan laddas. Men jag vill att
-// den skall shuffla när man trycker på knappen. -->
-
-    <!-- 
-function getQuote($tacosToEnjoy)
-{
-    if ([$tacos]['title'] === 'SPICY TACO') {
-        return 'LOOO-HOOO-ZUH-HER!';
-    }
-
-    if ([$tacos]['title'] === 'FISH-TACO') {
-        return 'You\'re a weird guy, Ace. A weird guy.';
-    }
-} -->
-    <!-- 
-vill ha en funktion som IF title på tacon är SPICY TACO echo typ "enjoy this Spicy Taco". hade varit bra 
-att få in en funktion då som kände av vilken taco det var och skrev ut "enjoy this XX" med hjälp av funktionen.
-
-function enjoy($theTaco)
-{
-    return "Enjoy the $theTaco";
-}
-
-
-ska man använda en array? 
-
-$tacosToEnjoy = [
-    'SPICY ASIAN',
-    'PINEAPPLE-AVOCADO',
-    'TACO-PARMESAN',
-    'FISH-TACO',
-]; -->
+    <!-- Kvar: Skriv kommentarer i index.php. Kolla igenom CSS:en, kan något mer
+    tas bort? Är det bra uppdelning på CSS:en?  -->
