@@ -2,14 +2,15 @@
 <?php require __DIR__ . '/header.php'; ?>
 
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
 
     <h1>Taco!</h1>
     <h1 class="headerTaco">Taco!</h1>
@@ -29,6 +30,12 @@
             <?php
             $numItems = count($tacos);
             $i = 0;
+
+
+            // $currentFactIndex = isset($_GET['fact']) ? $_GET['fact'] : false;
+            // $currentFact = $currentFactIndex ? $randomFact[$currentFactIndex] : false;
+
+            // var_dump($randomFact[false]);
 
             foreach ($tacos as $taco) :
                 $img = $taco['image'];
@@ -79,8 +86,28 @@
                 <?php if (++$i === $numItems) : ?>
 
                     <div class="randomFact">
-                        <button class="button"></button>
-                        <p>Press the taco for a random taco-fact!</p>
+
+                        <p id="randomFactButton" class="button"></p>
+                        <p id="fact">Press the taco for a random taco-fact!</p>
+
+                        <script>
+                            const fact = document.getElementById("fact");
+                            const button = document.getElementById("randomFactButton");
+
+                            const facts = [
+                                'There is a National Taco Day',
+                                'The Word Taco Means Light Lunch',
+                                'Tacos Have Been Around for Millennia',
+                                'You Cant Get Tacos at Lunchtime in Mexico',
+                                'Americans ate over 4.5 billion tacos last year!',
+                                'The first taco party in history was held in 1520'
+                            ];
+
+                            button.addEventListener("click", () => {
+                                const randomElement = facts[Math.floor(Math.random() * facts.length)];
+                                fact.innerHTML = randomElement;
+                            })
+                        </script>
 
                     </div>
                 <?php endif; ?>
@@ -94,11 +121,8 @@
     <?php require __DIR__ . '/footer.php'; ?>
 
 
-
-    <!-- <?php echo $randomFact[shuffle($randomFact)];            ?> -->
-
     <!-- Shufflar ett fakta varje gång sidan laddas. Men jag vill att
-    den skall shuffla när man trycker på knappen. -->
+    // den skall shuffla när man trycker på knappen. -->
 
     <!-- Kvar: Skriv kommentarer i index.php. Kolla igenom CSS:en, kan något mer
-    tas bort? Är det bra uppdelning på CSS:en?  -->
+    // tas bort? Är det bra uppdelning på CSS:en? Ändra stavningar, tex recepiets -->
