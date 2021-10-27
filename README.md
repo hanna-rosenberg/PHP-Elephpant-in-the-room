@@ -1,12 +1,16 @@
 INSERT MANDATORY GIF
 
-# Project Title
+# Taco! Taco!
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+This is a site about tacos with four new taco-recepiets every week. You can also learn some new things about tacos!
+Link to site: http://hannarosenberg.se/
 
 # Installation
 
-Add the installation instructions.
+1. You will need PHP to be able to view the project.
+2. Clone the repository to toyr computer.
+3. Start a local server in the command line.
+4. Open the index.php file in your browser.
 
 # Code Review
 
@@ -22,5 +26,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jennifer
-2. Linnea
+1. Jennifer Andersson
+2. Linnea Eriksson

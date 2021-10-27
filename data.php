@@ -28,7 +28,7 @@ $tacos = [
             'Add steak and marinade, and cook, stirring often, until steak has browned and marinade has reduced, about 5-6 minutes, or until desired doneness.
         Serve steak in tortillas, topped with onion, cilantro and lime.'
         ],
-        'image' => '/images/Tacoimg2.jpeg',
+        'image' => '/Images/Tacoimg2.jpeg',
         'rating' => 9.2,
         'date' => "2021-09-30"
 
@@ -61,7 +61,7 @@ $tacos = [
             'Mash your avocados with some garlic powder, salt, and lime juice. Toss your shredded cabbage with lime juice, olive oil, and salt. Char the tortillas over an open gas burner.',
             'Layer avocado mash, walnut chorizo, pineapple salsa, and slaw into a soft, warm, charred tortilla. Be amazed.'
         ],
-        'image' => '/images/Tacoimg3.jpeg',
+        'image' => '/Images/Tacoimg3.jpeg',
         'rating' => 8.4,
         'date' => "2021-10-02"
     ],
@@ -91,7 +91,7 @@ $tacos = [
             'Prep your other toppings!',
             'Preheat grill to medium heat. Remove meat from marinade and discard remaining marinade. Sprinkle with salt and pepper on both sides. Place steak on grill (it should sizzle!) and grill for 7-9 minutes per side, flipping just once. When a meat thermometer reads 140-145, remove from grill and cover in foil. Let it rest for 5 minutes and boom: perfect medium rare. Grill to 155/160 for medium.',
         ],
-        'image' => '/images/Tacoimg4.jpeg',
+        'image' => '/Images/Tacoimg4.jpeg',
         'rating' => 2.3,
         'date' => "2021-10-03"
     ],
@@ -131,7 +131,7 @@ $tacos = [
             'Heat the oil until a drip of water sizzles across the top. Dip each piece of fish in the plain flour, then the batter, then transfer to the hot oil. Fry on each side for 3-5 minutes or until golden brown and crispy. Remove from the frying pan and transfer to a plate lined with paper towels to drain excess oil. Sprinkle with salt while still hot; let cool slightly.',
             'Arrange your tacos with a few pieces of fish, cilantro, Cotija cheese, and jalapeño sauce. Yummy!',
         ],
-        'image' => '/images/Tacoimg5.jpeg',
+        'image' => '/Images/Tacoimg5.jpeg',
         'rating' => 9.8,
         'date' => "2021-10-05"
     ],
