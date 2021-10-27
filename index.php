@@ -31,11 +31,7 @@
             $numItems = count($tacos);
             $i = 0;
 
-
-            // $currentFactIndex = isset($_GET['fact']) ? $_GET['fact'] : false;
-            // $currentFact = $currentFactIndex ? $randomFact[$currentFactIndex] : false;
-
-            // var_dump($randomFact[false]);
+            usort($tacos, "sortByDate");
 
             foreach ($tacos as $taco) :
                 $img = $taco['image'];
@@ -70,16 +66,9 @@
                     echo "Rating: $grade"; ?>
 
                     <?php
-                    if ($grade >= 9) {
-                        echo "- This taco is a FAVORITE!";
-                    } elseif ($grade > 7 && $grade < 9) {
-                        echo "- This is a good one!";
-                    } elseif ($grade < 7 && $grade > 4) {
-                        echo "- This taco is allright!";
-                    } else {
-                        echo "- This taco is BAD!!";
-                    }
+                    echo rating($grade)
                     ?>
+
                 </p>
                 <p class="border">
                 </p>
@@ -120,9 +109,6 @@
 
     <?php require __DIR__ . '/footer.php'; ?>
 
-
-    <!-- Shufflar ett fakta varje gång sidan laddas. Men jag vill att
-    // den skall shuffla när man trycker på knappen. -->
 
     <!-- Kvar: Skriv kommentarer i index.php. Kolla igenom CSS:en, kan något mer
     // tas bort? Är det bra uppdelning på CSS:en? Ändra stavningar, tex recepiets -->

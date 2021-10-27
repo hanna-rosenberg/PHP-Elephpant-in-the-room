@@ -1,6 +1,6 @@
 /* Styles on button */
 .button {
-  background-image: url('Images/taco.png');
+  background-image: url('../Images/taco.png');
   background-size: 70px 70px;
   height: 70px;
   width: 70px;

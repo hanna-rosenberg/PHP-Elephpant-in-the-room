@@ -29,7 +29,8 @@ $tacos = [
         Serve steak in tortillas, topped with onion, cilantro and lime.'
         ],
         'image' => '/images/Tacoimg2.jpeg',
-        'rating' => 9.2
+        'rating' => 9.2,
+        'date' => "2021-09-30"
 
     ],
 
@@ -61,7 +62,8 @@ $tacos = [
             'Layer avocado mash, walnut chorizo, pineapple salsa, and slaw into a soft, warm, charred tortilla. Be amazed.'
         ],
         'image' => '/images/Tacoimg3.jpeg',
-        'rating' => 8.4
+        'rating' => 8.4,
+        'date' => "2021-10-02"
     ],
 
     [
@@ -90,7 +92,8 @@ $tacos = [
             'Preheat grill to medium heat. Remove meat from marinade and discard remaining marinade. Sprinkle with salt and pepper on both sides. Place steak on grill (it should sizzle!) and grill for 7-9 minutes per side, flipping just once. When a meat thermometer reads 140-145, remove from grill and cover in foil. Let it rest for 5 minutes and boom: perfect medium rare. Grill to 155/160 for medium.',
         ],
         'image' => '/images/Tacoimg4.jpeg',
-        'rating' => 2.3
+        'rating' => 2.3,
+        'date' => "2021-10-03"
     ],
 
     [
@@ -129,7 +132,8 @@ $tacos = [
             'Arrange your tacos with a few pieces of fish, cilantro, Cotija cheese, and jalapeño sauce. Yummy!',
         ],
         'image' => '/images/Tacoimg5.jpeg',
-        'rating' => 9.8
+        'rating' => 9.8,
+        'date' => "2021-10-05"
     ],
 ];
 
@@ -156,7 +160,7 @@ $amountOfTacos = amount('4.5 billion', 2020, 490000);
 
 
 // Function that shows a different string depending on what day it is. 
-function whatDay()
+function whatDay(): string
 {
 
     if (date('w') == 0) {
@@ -173,5 +177,31 @@ function whatDay()
         return "It's TACO-FRIDAY!";
     } else if (date('w') == 6) {
         return "It's taco-saturday!";
+    }
+}
+
+// Sorts recepiets by date.
+function sortByDate($recepiets1, $recepiets2): int
+{
+    if (strtotime($recepiets1['date']) < strtotime($recepiets2['date']))
+        return  1;
+    else if (strtotime($recepiets1['date']) > strtotime($recepiets2['date']))
+        return -1;
+    else
+        return 0;
+}
+
+
+// Returns string depending on grade.
+function rating($grade): string
+{
+    if ($grade >= 9) {
+        return "- This taco is a FAVORITE!";
+    } elseif ($grade > 7 && $grade < 9) {
+        return "- This is a good one!";
+    } elseif ($grade < 7 && $grade > 4) {
+        return "- This taco is allright!";
+    } else {
+        return "- This taco is BAD!!";
     }
 }

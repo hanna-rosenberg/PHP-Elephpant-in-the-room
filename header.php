@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taco! Taco!</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <link rel="stylesheet" href="facts.css" />
-    <link rel="stylesheet" href="recepiets.css" />
-    <link rel="stylesheet" href="button.css" />
-    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/media.css" />
+    <link rel="stylesheet" href="Style/facts.css" />
+    <link rel="stylesheet" href="Style/recepiets.css" />
+    <link rel="stylesheet" href="Style/button.css" />
+    <link rel="stylesheet" href="Style/navigation.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
