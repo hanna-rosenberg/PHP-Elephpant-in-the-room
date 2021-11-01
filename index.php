@@ -15,34 +15,43 @@
     <h1>Taco!</h1>
     <h1 class="headerTaco">Taco!</h1>
 
+
+    <!-- First fact on the site. Also a function.  -->
     <p class="headerFact">
         <?php echo $amountOfTacos; ?>
     </p>
 
+    <!-- Function telling you what taco-day it is depending on weekday. -->
     <h2>
-        <?php echo whatday(); ?>
+        <?php echo whatDay(); ?>
     </h2>
     <h2>Get inspired :</h2>
 
     <div class="parent">
         <div class="child">
 
+            <!-- To place the button at the end of the loop and bottom of page.   -->
             <?php
             $numItems = count($tacos);
             $i = 0;
 
+            // Function that sorts the recepiets by date. 
             usort($tacos, "sortByDate");
 
+            // Loop with the main-content. 
             foreach ($tacos as $taco) :
                 $img = $taco['image'];
                 $name = $taco['title'];
                 $grade = $taco['rating'];
             ?>
 
+                <!-- The main-content is echoed out. -->
                 <p><img src="<?php echo "$img"; ?>"></p>
+
                 <p class="recipes-title">
                     <?php echo $name; ?>
                 </p>
+
                 <ul>
                     <p class="main-titles">
                         <?php echo "Ingredients: "; ?></p>
@@ -52,6 +61,7 @@
                             <?php echo $ingredient; ?>
                         </li>
                     <?php } ?>
+
                     <p class="main-titles">
                         <?php echo "Directions: "; ?></p>
                     <?php foreach ($taco['directions'] as $direction) { ?>
@@ -62,20 +72,19 @@
                 </ul>
 
                 <p class="recipes-rating">
-                    <?php
-                    echo "Rating: $grade"; ?>
+                    <?php echo "Rating: $grade"; ?>
 
-                    <?php
-                    echo rating($grade)
-                    ?>
-
+                    <!-- Returns string depending on grade. -->
+                    <?php echo rating($grade) ?>
                 </p>
+
                 <p class="border">
                 </p>
+
+                <!-- Button that shuffles a random fact when you press it. -->
                 <?php if (++$i === $numItems) : ?>
 
                     <div class="randomFact">
-
                         <p id="randomFactButton" class="button"></p>
                         <p id="fact">Press the taco for a random taco-fact!</p>
 
@@ -99,16 +108,12 @@
                         </script>
 
                     </div>
+
                 <?php endif; ?>
 
-            <?php
-            endforeach ?>
+            <?php endforeach ?>
 
         </div>
     </div>
 
     <?php require __DIR__ . '/footer.php'; ?>
-
-
-    <!-- Kvar: Skriv kommentarer i index.php. Kolla igenom CSS:en, kan något mer
-    // tas bort? Är det bra uppdelning på CSS:en? Ändra stavningar, tex recepiets -->

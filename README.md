@@ -8,7 +8,7 @@ Link to site: http://hannarosenberg.se/
 # Installation
 
 1. You will need PHP to be able to view the project.
-2. Clone the repository to toyr computer.
+2. Clone the repository to your computer.
 3. Start a local server in the command line.
 4. Open the index.php file in your browser.
 
@@ -26,5 +26,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jennifer Andersson
+1. Neo Lejondahl
 2. Linnea Eriksson
