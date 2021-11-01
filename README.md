@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+<img src="https://media.giphy.com/media/EsDCYBUQM0KlO/giphy.gif">
 
 # Taco! Taco!
 
